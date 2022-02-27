@@ -72,7 +72,7 @@ with DAG(
             stage_conn.commit()
 
             # Copy to stage
-            # TODO: How does this handle large datasets? (Over 1M rows)
+            # TODO: How does this handle large tables? (Over 1M rows)
 
             odoo_src_cur = odoo_src_conn.cursor()
             odoo_src_cur.execute(config["src_query"])
